@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            font-size: 72px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
+    <p>麻瓜</p>
+    <script>
+        const element_h1 = document.querySelector("h1");
+        const element_p = document.querySelector("p");
+        element_h1.addEventListener("click", function(event) {
+            if (element_p.textContent === "麻瓜") {
+                element_p.textContent = "麻瓜、麻瓜、呱呱呱";
+            } else {
+                element_p.textContent = "麻瓜";
+            }
+        })
+    </script>
 </body>
 </html>
