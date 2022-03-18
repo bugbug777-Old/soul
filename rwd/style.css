@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+.bg {
+  height: 600px;
+  background-image: url('car.jpg');
+  background-repeat: no-repeat; /* 圖片尺寸較小，且不想重複使用時 */
+  background-position: center center; /* 使用圖片中央對齊 */
+  background-size: cover; /* 圖片尺寸的覆蓋模式，cover 全覆蓋、佔滿 */
+}
+img {
+  object-position: center center; /* 使用圖片中央對齊 */
+  object-fit: cover; /* 圖片尺寸的覆蓋模式，cover 全覆蓋、佔滿 */
+}
